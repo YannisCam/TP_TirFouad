@@ -165,7 +165,7 @@ Créer un livre :
 ~~~
 curl -X POST http://localhost:8080/books \
 -H "Content-Type: application/json" \
--d '{"title":"Les Misérables","isbn":"978-2-07-036012-8","year":1862,"category":"NOVEL","authorId":1}'
+-d '{"title":"Les Misérables","isbn":"978-2-07-036012-8","year":1862,"category":"NOVEL","author":["firstName:"victor", "lastName:"Hugo"]}'
 ~~~
 
 Définir la variable baseUrl = http://localhost:8080
